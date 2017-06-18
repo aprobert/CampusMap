@@ -1,0 +1,24 @@
+svg {
+	width: 100%;
+}
+.dropdown { 
+  width: 100%;
+  font-size: 30px; /* Remember to change font units to vw */
+  padding: 5px;
+  border: 2px solid teal;
+  display: inline-block;
+  background: white;
+  outline: none;
+}
+form {
+  display: inline-block;
+  width: 40%;
+}
+
+.building {
+  fill: #7b8383;
+}
+.highlight {
+  fill: blue;
+}
+
