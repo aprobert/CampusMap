@@ -2,12 +2,11 @@
 <html>
 
 <head>
-  <title>Where the flip is...?</title>
+  <title>Campus Map</title>
   <meta charset='utf-8'>
-  <meta name='viewport' content='width=device-width'>
+  <meta name='viewport' content='width=device-width initial-scale=1.0'>
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
-  <link href="https://fonts.googleapis.com/css?family=Fira+Sans+Condensed:300,500" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Quicksand:300,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script type="text/javascript" src='script.js'></script>
@@ -38,6 +37,9 @@
   .st15{fill:none;stroke:#737172;stroke-width:4;stroke-miterlimit:10;}
   .st16{font-family:'Arial-Black';}
   .st17{font-size:70px;}
+  .st18{fill:#9DA0A0;} /* 18-20 added in after for the unused building */
+  .st19{fill:#C9C8C7;}
+  .st20{font-size:35px;}
 </style>
 <rect class="st0" width="2166.7" height="924.9"/>
 <path class="st1" d="M241.5,1.1v674.3H0v148.7h1539.7c0,0,397,18.9,627-152.9V501.5c0,0-302,179.5-625.9,179.5l-1177-4V0L241.5,1.1z
@@ -113,13 +115,18 @@
   <polygon class="st12" points="1216.2,483.2 1216.2,483.1 1216.2,483.1 1179.5,467 1179.5,495.5 1252.1,495.5 1252.1,467.4  "/>
 </g>
 <text transform="matrix(1 0 0 1 90.4901 412.3573)" class="st12 st16 st17">$</text>
+<!-- Adds in the unused building -->
+<g id="NotInUse">
+  <rect x="641" y="90" class="st18" width="278" height="183.1"/>
+  <text transform="matrix(1 0 0 1 678 194.4)" class="st19 st4 st20">NOT IN USE</text>
+</g>
 </svg>
 
 
 
 <form id='buildings1'>
   <select class='dropdown' id='lcp'>
-    <option value="blank"> </option>
+    <option value="blank">LCP-?</option>
     <option value="LCP1">LCP-1</option>
     <option value="LCP2">LCP-2</option>
     <option value="LCP3">LCP-3</option>
@@ -134,7 +141,7 @@
 
 <form id='buildings2'>
   <select class='dropdown' id='buildingNo'>
-    <option value="blank"> </option>
+    <option value="blank">Building ?</option>
     <option value="building0">Pixel</option>
     <option value="building1">Building 1</option>
     <option value="building2">Building 2</option>
@@ -145,7 +152,6 @@
     <option value="building8">Building 8</option>
   </select>
 </form>
-
 
 </body>
 
